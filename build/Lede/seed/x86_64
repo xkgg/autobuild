@@ -5,3 +5,5 @@ CONFIG_GRUB_IMAGES=y
 CONFIG_PACKAGE_libnetsnmp=y
 CONFIG_PACKAGE_openssh-sftp-server=y
 CONFIG_PACKAGE_snmpd=y
+CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_luci-app-ssr-plus=y
