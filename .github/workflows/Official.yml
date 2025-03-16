@@ -215,7 +215,13 @@ jobs:
       run: |
         cd openwrt
         source ${BUILD_PATH}/common.sh && Diy_xinxi
-    
+
+        
+    - name: 固件上传 artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: OpenWrt
+        path: ${BUILD_PATH}/common.sh 
     - name: 清理Actions空间
       continue-on-error: true
       if: env.REPO_TOKEN
